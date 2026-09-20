@@ -1,0 +1,36 @@
+{
+  "id": "dev.onda.scrobble.listenbrainz",
+  "name": "ListenBrainz Scrobbler",
+  "description": "Envía reproducciones y el estado actual a ListenBrainz.",
+  "author": "ONDA",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0",
+  "runtime": "python-v1",
+  "entrypoint": "provider.py",
+  "capabilities": [
+    "auth",
+    "scrobble.submit"
+  ],
+  "platforms": [
+    "android"
+  ],
+  "permissions": {
+    "networkDomains": [
+      "api.listenbrainz.org"
+    ],
+    "loginOrigins": [],
+    "secureStorageKeys": [
+      "user_token"
+    ]
+  },
+  "settings": [
+    {
+      "key": "user_token",
+      "label": "Token de usuario",
+      "description": "Token personal de ListenBrainz. ONDA lo cifra y nunca vuelve a mostrarlo.",
+      "type": "secret",
+      "required": true
+    }
+  ],
+  "repository": "https://github.com/LERL7355608/onda-listenbrainz-scrobble-provider"
+}
