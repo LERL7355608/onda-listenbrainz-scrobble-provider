@@ -3,7 +3,7 @@
   "name": "ListenBrainz Scrobbler",
   "description": "Envía reproducciones y el estado actual a ListenBrainz.",
   "author": "ONDA",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "apiVersion": "1.0.0",
   "runtime": "python-v1",
   "entrypoint": "provider.py",
