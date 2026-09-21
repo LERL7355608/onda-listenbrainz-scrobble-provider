@@ -6,6 +6,10 @@ application.
 
 ## Configuration
 
+Open the plugin configuration and press **Conectar con ListenBrainz**. Sign in,
+copy the user token shown by ListenBrainz, then return to ONDA and confirm the
+import. ONDA stores the token encrypted in plugin-isolated storage.
+
 1. Sign in to ListenBrainz.
 2. Open `https://listenbrainz.org/settings/` and copy the user token.
 3. Install the `.meb` in ONDA.
